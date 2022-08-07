@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Task Manager</title>
+</head>
+<body>
+    <header>
+        <div class="welcome-banner">
+            <h1>Welcome to TaskBoard!</h1>
+            <p>View your existing projects or create a new project below.</p>
+        </div>
+    </header>
+    <nav>
+        <div class="logo-banner">
+            <h1>TaskBoard</h1>
+        </div>
+        <ul class="main-nav">
+            <li>Home</li>
+            <li>About</li> <!-- "TaskBoard is an all-in-one project management system that makes it easy to track the work that matters most to you ..." -->
+            <li>(Messages)</li>
+            <li>Projects</li> <!-- (click for dropdown) -->
+            <li>Tasks</li>
+            <li>(Communities)</li>
+        </ul>
+        <ul class="addtl-nav">
+            <li>Settings</li>
+            <li>Support</li>
+            <li>Privacy</li>
+        </ul>
+    </nav>
+    <main>
+        <section class="projects">
+            <h2>Your Projects</h2>
+            <div class="projects-body">
+                <p id="no-projects">You haven't added any projects yet.</p>
+            </div>
+        </section>
+        <section class="create-project">
+            <form action="">
+                <h2>Create a Project</h2>
+                <div>
+                    <label for="title">Title</label>
+                </div>
+                <div>
+                    <input type="text" id="title">
+                </div>
+                <div>
+                    <label for="description">Description</label>
+                </div>
+                <div>
+                    <textarea name="" id="description" rows="5"></textarea>
+                    <!-- <input type="text" id="description"> -->
+                </div>
+                <div>
+                    <button type="button" id="add-new">Add Project</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
