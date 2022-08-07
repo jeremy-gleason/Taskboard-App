@@ -36,7 +36,8 @@ const domMethods = {
         const descripInput = document.createElement('textarea');
         descripInput.setAttribute('rows', '3');
         descripInput.classList.add('new-descrip');
-        descripInput.setAttribute('value', description);
+        descripInput.textContent = description;
+        // descripInput.setAttribute('value', description);
         descripDiv.appendChild(descripInput);
     
         // confirm & discard changes buttons
@@ -112,7 +113,7 @@ const domMethods = {
                 children[i].firstChild.value = title;
             }
             if (children[i].tagName === 'DIV' && children[i].firstChild.classList.contains('new-descrip')) {
-                children[i].firstChild.value = description;
+                children[i].firstChild.textContent = description;
             }
         }
     },
