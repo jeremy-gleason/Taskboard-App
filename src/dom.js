@@ -1,5 +1,6 @@
 const domMethods = {
     projectsBody: document.querySelector('.projects-body'),
+    header: document.getElementById('header'),
     newTitle: document.getElementById('title'),
     newDescription: document.getElementById('description'),
     displayProject: function(title, description, id) {
@@ -64,23 +65,23 @@ const domMethods = {
         this.projectsBody.appendChild(newProject);
     },
     updateProject: function(projectNode, newTitle, newDescription) {
-        // console.log('updating project...');
         const children = projectNode.childNodes;
         for (let i = 0; i < children.length; i++) {
-            console.log(children[i]);
             if (children[i].tagName === 'H3') {
-                // console.log(children[i]);
                 children[i].textContent = newTitle;
             }
             if (children[i].tagName === 'P') {
-                children[i].textContent = newDescription;
+                children[i].innerText = newDescription;
             }
         }
     },
-    displayMessage: function() {
+    setHeader(text) {
+        this.header.innerText = text;
+    },
+    displayMessage: function(text) {
         const message = document.createElement('p');
         message.setAttribute('id', 'no-projects');
-        message.innerText = `You haven't added any projects yet.`;
+        message.innerText = text;
         this.projectsBody.appendChild(message);
     },
     clearDisplay: function() {
@@ -104,8 +105,6 @@ const domMethods = {
         }
     },
     updateInputFields: function(projectNode, title, description) {
-        console.log(projectNode, title, description);
-
         const children = projectNode.childNodes;
 
         for (let i = 0; i < children.length; i++) {
