@@ -112,7 +112,8 @@ const domMethods = {
                 children[i].firstChild.value = title;
             }
             if (children[i].tagName === 'DIV' && children[i].firstChild.classList.contains('new-descrip')) {
-                children[i].firstChild.textContent = description;
+                children[i].firstChild.innerText = description;
+                children[i].firstChild.value = description;
             }
         }
     },
