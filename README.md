@@ -14,4 +14,4 @@ It uses the Web Storage API to save users' data across browser sessions in local
 
 ## Using the App
 
-TaskBoard is hosted on Github Pages. [Click here](https://jeremy-gleason.github.io/taskboard-app) to see it live and begin using it.
+TaskBoard is hosted on Github Pages. [Click here](https://jeremy-gleason.github.io/Taskboard-App) to see it live and begin using it.
