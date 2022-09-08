@@ -8,9 +8,8 @@ and remove older projects that you're no longer working on.
 
 ## Details
 
-TaskBoard is built with JavaScript, HTML, and CSS, using ES6 modules to organize the code and webpack to automate the build process. (Additional details: modular, object-oriented JavaScript)
-
-It uses the Web Storage API to save users' data across browser sessions in local storage. (...)
+TaskBoard is built with JavaScript, HTML, and CSS, using ES6 modules to organize the codebase and webpack to automate the build process.
+It also employs the Web Storage API to save users' data across browser sessions in local storage.
 
 ## Using the App
 
